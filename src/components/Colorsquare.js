@@ -10,7 +10,7 @@ class Colorsquare extends Component {
             <p className = "colorSquareTitle"> {this.props.title} </p>
             <p className = "colorSquareDivider">_______________________</p>
             <p className = "colorSquareBody"> {this.props.body}</p>
-            <button className ="colorSquareBtn"> Learn More </button>
+            <button style = {{backgroundColor: this.props.color}} className ="colorSquareBtn"> Learn More </button>
         </div>
       </Fragment>
     );

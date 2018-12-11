@@ -13,6 +13,10 @@ class Home extends Component {
       <Fragment>
         <Slideshow/>
 
+        <h1> What we are offering</h1>
+        <div className="border"> </div>
+        <h4> Our ophthalmologists, optometrists and staff are committed to delivering a professional and enjoyable patient experience. </h4>
+
         <Grid container spacing={0} align = "center" className = "colorSquareGrid">
         <Grid item xs={12} sm = {6} md = {3}>
             <Colorsquare title = "Physiology" color = "teal" body = "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."/>
@@ -28,7 +32,7 @@ class Home extends Component {
         </Grid>
         </Grid>
 
-        <Grid container spacing={0} align = "center" className = "colorSquareGrid">
+        <Grid container spacing={0} align = "center" className = "middleGrid">
         <Grid item xs={12} sm = {6} md = {8}>
             <Testimonial text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." name="- John Doe (Patient)" img="../img/profile1.jpg" />
             <hr/>
@@ -40,15 +44,10 @@ class Home extends Component {
             <Hours/>
         </Grid>
         </Grid>
-
-
-
+        <h1> Our Doctors</h1>
+        <div className="border"> </div>
+        <h5> Our ophthalmologists, optometrists and staff are committed to delivering a professional and enjoyable patient experience. </h5>
         <Grid container spacing={0} align = "center" className = "doctorGrid">
-        <Grid item xs={1} sm = {1} md = {1}>
-            <p className = "prevDoctor">&#10094;</p> 
-        </Grid>
-        <Grid item xs={10} sm = {10} md = {10}>
-          <Grid container spacing={0} align = "center">
             <Grid item xs={12} sm = {6} md = {4}>
                 <Card src = "../img/doctor1.jpg"/>
             </Grid>
@@ -58,12 +57,15 @@ class Home extends Component {
             <Grid item xs={12} sm = {6} md = {4}>
                <Card src = "../img/doctor3.jpg"/>
             </Grid>
-          </Grid>
-             
-        </Grid>
-        <Grid item xs={1} sm = {1} md = {1}>
-            <p className="nextDoctor">&#10095;</p> 
-        </Grid>
+            <Grid item xs={12} sm = {6} md = {4}>
+                <Card src = "../img/doctor3.jpg"/>
+            </Grid>
+            <Grid item xs={12} sm = {6} md = {4}>
+                <Card src = "../img/doctor1.jpg"/>
+            </Grid>
+            <Grid item xs={12} sm = {6} md = {4}>
+               <Card src = "../img/doctor2.jpg"/>
+            </Grid>
         </Grid>
       </Fragment>
     );

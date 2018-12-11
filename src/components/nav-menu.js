@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
-import { BrowserRouter as Link} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom'
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -25,7 +25,7 @@ const styles = {
 
 
 class NavMenu extends Component {
-
+ 
   state = {
     right: false,
   };
@@ -36,7 +36,9 @@ class NavMenu extends Component {
     });
   };
 
-  render() {
+  render(props) {
+
+
     //Mobile menu
     const sideList = (
       <div style={styles.root}>
@@ -120,12 +122,12 @@ class NavMenu extends Component {
           <Grid item xs={6} sm = {8} md = {8} lg = {6}>
               <Hidden smDown>
               <list className = "navList">
-                <li> <a href="/home">HOME</a> </li>
-                <li> <a href="/about-us">ABOUT US</a>  </li>
-                <li> <a href="/doctors">DOCTORS</a>  </li>
-                <li> <a href="/departments">DEPARTMENTS</a> </li>
-                <li> <a href="/careers">CAREERS</a> </li>
-                <li> <a href="/contact-us">CONTACT US</a> </li>
+                <li> HOME </li> 
+                <li> ABOUT US </li>
+                <li> DOCTORS  </li>
+                <li> DEPARTMENTS </li>
+                <li> CAREERS </li>
+                <li> CONTACT US </li>
               </list>
               </Hidden>
               <Hidden mdUp>

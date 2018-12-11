@@ -31,14 +31,13 @@
     height:30px;
     font-size:15px;
     color:white;
-    border:none;
+    border: white 2px solid;
     font-weight:bold;
-    background:black;
+
 }
 
 .colorSquareBtn:hover {
     cursor: pointer;
     color:white;
-    background: black;
-    border: white 2px solid;
+    border: white 3px solid;
 }

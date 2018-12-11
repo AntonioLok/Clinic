@@ -2,8 +2,12 @@
     margin-top: 40px;
 }
 
+.middleGrid {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
 .doctorGrid {
-    margin-top: 50px;
     margin-bottom:50px;
 }
 
@@ -24,4 +28,29 @@
 .prevDoctor:hover, .nextDoctor:hover {
     background-color:grey;
     color:white;
+  }
+
+  h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size:16px;
+  }
+
+  .border {
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #3366CC;
+    margin: 20px auto;
   }
