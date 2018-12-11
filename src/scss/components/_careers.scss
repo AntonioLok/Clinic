@@ -1,0 +1,30 @@
+.job-application {
+  margin: 20px 100px 80px 100px;
+  
+  .application-form {
+    text-align: center;
+    .input {
+      max-width: 400px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    
+    .file-upload {
+      display: flex;
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      text-align: left;
+      .file-label {
+        max-width: 400px;
+        width: 100%;
+      }
+    }
+  }
+
+  h1 {
+    margin: 60px auto;
+    text-align: center;
+  }
+}
