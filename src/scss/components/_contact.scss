@@ -5,3 +5,61 @@
 .contactImg {
     width:100%;
 }
+
+.leftGrid  {
+    border-right: 1px rgb(207, 202, 202) solid;
+
+}
+
+.contactGrid {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .border {
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #3366CC;
+    margin: 20px auto;
+  }
+  
+  .inputContainer {
+      width:80%;
+      line-height: 90px;
+  }
+
+  
+ .input {
+     width:60%;
+     margin-bottom: 400px;
+ }
+
+ .button {
+     cursor: pointer;
+     display:block;
+     margin-top: 45px;
+     margin-bottom: 100px;
+     background:#3366CC;
+     height:45px;
+     width:130px;
+     font-size:15px;
+     color:white;
+     border: white 2px solid;
+
+ }
+
+ .address {
+     line-height: 15px;
+ }

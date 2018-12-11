@@ -5,6 +5,21 @@ import TextField from '@material-ui/core/TextField';
 import Form from './Form'
 
 class Colorsquare extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: ""
+    }
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log("submitted");
+  }
+
+  handleChange(e) {
+    this.setState({name: e.target.value});
+  }
 
   render(props) {
     const { classes } = this.props
@@ -12,27 +27,49 @@ class Colorsquare extends Component {
       <Fragment>
         <div className = "contactContainer">
             <Imgwithtext/>
-            <Grid container spacing={0} align = "center" className = "colorSquareGrid">
-              <Grid item xs={12} sm = {6} md = {6}>
-              <table>
-                <tr>
-                <td><img className = "navIcon" src = "../img/telephone.png"/> </td>
-                <td><p className = "navText"> 647-608-3962 </p> </td>
-                </tr>
-                <tr>
-                <td><img className = "navIcon" src = "../img/telephone.png"/> </td>
-                <td><p className = "navText"> 647-608-3962 </p> </td>
-                </tr>
-                <tr>
-                <td><img className = "navIcon" src = "../img/telephone.png"/> </td>
-                <td><p className = "navText"> 647-608-3962 </p> </td>
-                </tr>
-              </table>
+            <h1> Get in Touch</h1>
+            <div className="border"> </div>
+            <h4> Please fill out the form below if you have any questions. We will respond as soon as possible. </h4>
+            <Grid container spacing={0} align = "center" className = "contactGrid">
+              <Grid item xs={12} sm = {6} md = {6} className = "leftGrid">
+              <div className = "inputContainer">
+              <TextField
+                label="Name"
+                onChange={(event) => this.handleChange(event)}
+                className="input"
+                required
+              /> 
+              <TextField
+                label="Your Email Address"
+                onChange={(event) => this.handleChange(event)}
+                className="input"
+                required
+              /> 
+              <TextField
+                label="Message"
+                onChange={(event) => this.handleChange(event)}
+                multiline={true}
+                rows={5}
+                className="input"
+                required
+              /> 
+              <button className = "button"> Submit </button>
+              </div>
               </Grid>
               <Grid item xs={12} sm = {6} md = {6}>
-                  <Form/>
+              <div className = "address">
+                <p> <b>Woburn Clinic</b> </p>
+                <p> 1000 Lawrence Road, Unit 10</p>
+                <p> Scarborough, Ontario</p>
+                <p> L2K 7N4</p>
+                <p> Canada</p>
+                <br/>
+                <p> <b>Phone:</b> 905-123-4567 </p>
+                <p> <b>Fax:</b> 231-132-4127 </p>
+                <p> <b>Email:</b> info@healthcare.com</p>
+              </div>
               </Grid>
-        </Grid>
+            </Grid>
         </div>
       </Fragment>
     );

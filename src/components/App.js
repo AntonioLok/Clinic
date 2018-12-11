@@ -6,6 +6,7 @@ import Doctors from './doctors'
 import Careers from './careers';
 import Footer from './footer';
 import AboutUs from './about-us';
+import Contact from './Contact';
 import '../scss/app.scss';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route exact path="/doctors" component={Doctors} />
             <Route exact path="/about-us" component={AboutUs} />
             <Route exact path="/careers" component={Careers} />
+            <Route exact path="/contact-us" component={Contact} />
           </Switch>
           <Footer />
         </div>

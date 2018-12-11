@@ -17,7 +17,7 @@
 
 /* Next & previous buttons */
 .prev, .next {
-  color:white;
+  color:#3366CC;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -39,8 +39,8 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color:lightblue;
-  color:white;
+  background:#3366CC;
+  color:lightblue
 }
 
 /* Caption text */
