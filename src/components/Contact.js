@@ -26,7 +26,7 @@ class Colorsquare extends Component {
     return (
       <Fragment>
         <div className = "contactContainer">
-            <Imgwithtext/>
+            <Imgwithtext src = "../img/contact.jpg" text = ""/>
             <h1> Get in Touch</h1>
             <div className="border"> </div>
             <h4> Please fill out the form below if you have any questions. We will respond as soon as possible. </h4>

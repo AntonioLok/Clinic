@@ -22,10 +22,9 @@ class Imgwithtext extends React.Component {
       return (
          <Fragment>
             <div class="textImgContainer">
-              <img src="../img/contact.jpg" alt="Snow" style={{width:"100%"}}/>
+              <img src={this.props.src} alt="Snow" style={{width:"100%", maxHeight:340, minHeight:180}}/>
               <div className="textImgCentered">
-                <p>Contact Us </p>
-                <p className = "subtext">Have a question about our clinic? Feel free to give us a call or ask a question using the form below. </p>
+                <p> {this.props.text} </p>
               </div>
             </div>
          </Fragment>
