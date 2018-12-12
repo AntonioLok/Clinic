@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid'
 
 class Careers extends Component {
   constructor(props) {
@@ -66,8 +67,15 @@ class Careers extends Component {
 
     return (
       <div className="job-application">
-        <h1> Job Application Form </h1>
-        {applitcationForm}
+        <Grid item xs={12} className="page-banner"
+          container
+          alignItems="center"
+          justify="center">
+        </Grid>
+          <div className="container">
+            <h1> Job Application Form </h1>
+            {applitcationForm}
+          </div>
       </div>
     );
   }

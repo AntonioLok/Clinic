@@ -1,30 +1,47 @@
 .job-application {
-  margin: 20px 100px 80px 100px;
-  
-  .application-form {
+
+  .page-banner {
     text-align: center;
-    .input {
-      max-width: 400px;
-      width: 100%;
-      margin-bottom: 30px;
-    }
-    
-    .file-upload {
-      display: flex;
-      max-width: 400px;
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      text-align: left;
-      .file-label {
+    height: 340px;
+    font-size: 36px;
+    color: white;
+    background : url('https://naniaenergy.com/jobs/wp-content/uploads/2016/06/job-application-banner.png');
+    box-shadow: inset 0 0 0 2000px rgba(84, 117, 228, 0.3);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }  
+
+  .container {
+    margin: 20px 100px 80px 100px;
+    .application-form {
+      text-align: center;
+      .input {
         max-width: 400px;
         width: 100%;
+        margin-bottom: 30px;
       }
+      
+      .file-upload {
+        display: flex;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: left;
+        .file-label {
+          max-width: 400px;
+          width: 100%;
+        }
+      }
+    }
+  
+    h1 {
+      margin: 60px auto;
+      text-align: center;
     }
   }
 
-  h1 {
-    margin: 60px auto;
-    text-align: center;
-  }
 }

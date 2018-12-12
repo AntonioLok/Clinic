@@ -4,6 +4,13 @@ import doctors from '../doctors-data';
 
 class Doctors extends Component {
 
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0)
+      console.log("J")
+    }
+  }
+
   render() {
     const renderDoctor = (doctor) => {
       const { name, picture, biography, profession } = doctor;

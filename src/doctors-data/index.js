@@ -1,7 +1,7 @@
 const doctors = [
   {
     name: "Dr. Brian Misiaszek", 
-    picture: "/img/doctor1.jpg",
+    picture: "/img/doctor11.jpg",
     profession: "Ophthalmologists",
     biography: 
     "Brian Misiaszek is an Associate Professor and Clinical Educator in the Department of Medicine in the Division of Geriatric Medicine at McMaster University.  He completed his MD at the University of Western Ontario in 1997 and his residency training in Geriatric Medicine at McMaster University in 2001. " +
@@ -10,7 +10,7 @@ const doctors = [
   },
   {
     name: "Dr. Ike Ahmed", 
-    picture: "/img/doctor2.jpg",
+    picture: "/img/doctor22.png",
     profession: "Ophthalmologists",
     biography:
     "Dr. Ahmed has become world renowned for his skills and groundbreaking work in the diagnosis and surgical treatment of highly complex eye diseases including glaucoma and surgical complications.  He is recognized as being one of the most experienced complex eye surgeons in the world and has trained numerous surgeons in innovative surgical techniques." +
@@ -19,7 +19,7 @@ const doctors = [
     },
   {
     name: "Dr. Natasha Dang", 
-    picture: "/img/doctor3.jpg",
+    picture: "/img/doctor33.jpg",
     profession: "Ophthalmologists",
     biography: 
     "Natasha Dang completed a Bachelor of Medical Sciences (BMSc) degree at the University of Alberta. She was then accepted to Medical School at the age of 18 and completed her undergraduate Doctor of Medicine (MD) degree, also at the University of Alberta. She also attended Oxford University for a program in English Literature & Creative Writing out of interest as an adjunct to medical school." +

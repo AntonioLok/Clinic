@@ -14,7 +14,7 @@ class Home extends Component {
         <Slideshow/>
 
         <h1> What we are offering</h1>
-        <div className="border"> </div>
+        <div className="border-home"> </div>
         <h4> Our ophthalmologists, optometrists and staff are committed to delivering a professional and enjoyable patient experience. </h4>
 
         <Grid container spacing={0} align = "center" className = "colorSquareGrid">
