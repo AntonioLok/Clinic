@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import React, {Fragment, Component } from 'react';
+import {Router , Route , browserHistory} from "react-router";
 import NavMenu from './nav-menu';  
 import Home from './home';
 import Doctors from './doctors'
@@ -12,20 +12,20 @@ import '../scss/app.scss';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Fragment>
         <div className="app-container">
-          <NavMenu />
-          <Switch>
+          <NavMenu/>
+          <Router history = {browserHistory}>
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/doctors" component={Doctors} />
             <Route exact path="/about-us" component={AboutUs} />
             <Route exact path="/careers" component={Careers} />
             <Route exact path="/contact-us" component={Contact} />
-          </Switch>
+          </Router>
           <Footer />
         </div>
-      </Router>
+      </Fragment>
     );
   }
 }

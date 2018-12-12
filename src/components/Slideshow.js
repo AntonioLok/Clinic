@@ -18,25 +18,16 @@ class TextFields extends React.Component {
        this.auto()
     }
 
+    componentWillUnmount = () => {
+        clearInterval(this.state.interval);
+     }
+ 
+
     auto = () => {
         this.setState({
             interval:  setInterval( () =>  { this.next() }, 10000)
         })
    
-    }
-
-    play = () => {
-        this.auto()
-        this.setState({
-            play: true
-        })
-    }
-
-    pause = () => {
-        clearInterval(this.state.interval)
-        this.setState({
-            play: false
-        })
     }
    
     //moves to previous slide in rotation

@@ -8,6 +8,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/Inbox';
 import PropTypes from 'prop-types';
+import { browserHistory } from 'react-router';
 
 const styles = {
   root: {
@@ -28,6 +29,10 @@ class NavMenu extends Component {
   state = {
     right: false,
   };
+
+  reroute = (path) => {
+    browserHistory.push(path);
+  }
 
   toggleDrawer = (open) => () => {
     this.setState({
@@ -121,12 +126,12 @@ class NavMenu extends Component {
           <Grid item xs={6} sm = {8} md = {8} lg = {6}>
               <Hidden smDown>
               <list className = "navList">
-                <li> HOME </li> 
-                <li> ABOUT US </li>
-                <li> DOCTORS  </li>
-                <li> DEPARTMENTS </li>
-                <li> CAREERS </li>
-                <li> CONTACT US </li>
+                <li onClick = {this.reroute.bind(this, "/")}> HOME </li> 
+                <li onClick = {this.reroute.bind(this, "/about-us")}> ABOUT US </li>
+                <li onClick = {this.reroute.bind(this, "/doctors")}> DOCTORS  </li>
+                <li onClick = {this.reroute.bind(this, "/departments")}> DEPARTMENTS </li>
+                <li onClick = {this.reroute.bind(this, "/careers")}> CAREERS </li>
+                <li onClick = {this.reroute.bind(this, "/contact-us")}> CONTACT US </li>
               </list>
               </Hidden>
               <Hidden mdUp>
