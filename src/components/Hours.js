@@ -1,11 +1,9 @@
 import React, { Component, Fragment } from 'react';
-import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 
 class Hours extends Component {
 
   render(props) {
-    const { classes } = this.props
+
     return (
       <Fragment>
         <div className = "hoursContainer"> 

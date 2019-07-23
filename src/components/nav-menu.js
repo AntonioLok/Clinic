@@ -90,38 +90,10 @@ class NavMenu extends Component {
 
     return (
       <Fragment>
-      <div className="nav-menu">
-        <Grid container spacing={0} align = "center">
-        <Grid item xs={12} sm = {4} md = {4}>
-          <table>
-            <tr>
-            <td><img className = "navIcon" src = "../img/telephone.png"/> </td>
-            <td><p className = "navText"> 647-608-3962 </p> </td>
-            </tr>
-          </table>
-        </Grid>
-        <Grid item xs={12} sm = {4} md = {4}>
-          <table>
-            <tr>
-            <td><img className = "navIcon" src = "../img/mail.png"/> </td>
-            <td><p className = "navText"> Deantowheed5@gmail.com </p> </td>
-            </tr>
-          </table>
-        </Grid>
-        <Grid item xs={12} sm = {4} md = {4}>
-          <table>
-            <tr>
-            <td><img className = "navIcon" src = "../img/location.png"/> </td>
-            <td><p className = "navText"> 40 Dring Street, Ajax </p> </td>
-            </tr>
-          </table>
-        </Grid>
-        </Grid>
-      </div>
        <div className="nav-menu-1">
        <Grid container spacing={0} align = "center">
           <Grid item xs={6} sm = {4} md = {4} lg = {6}>
-              <img className = "navLogo" src = "../img/logo.png"/>
+              <img alt ="" className = "navLogo" src = "../img/logo.png"/>
           </Grid>
           <Grid item xs={6} sm = {8} md = {8} lg = {6}>
               <Hidden smDown>
@@ -135,7 +107,7 @@ class NavMenu extends Component {
               </list>
               </Hidden>
               <Hidden mdUp>
-                <img className= "navMenu" onClick={this.toggleDrawer(true)} src = "../img/menu.png"/>
+                <img alt = "" className= "navMenu" onClick={this.toggleDrawer(true)} src = "../img/menu.png"/>
                 <Drawer anchor="right" open={this.state.right} onClose={this.toggleDrawer(false)}>
                   <div
                     tabIndex={0}

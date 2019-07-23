@@ -16,8 +16,6 @@ class Imgwithtext extends React.Component {
 
 
   render(props) {  
-
-    const { classes } = this.props;
    
       return (
          <Fragment>

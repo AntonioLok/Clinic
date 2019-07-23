@@ -3,7 +3,7 @@ import React, { Component, Fragment } from 'react';
 class Colorsquare extends Component {
 
   render(props) {
-    const { classes } = this.props
+
     return (
       <Fragment>
         <div className = "colorSquare" style = {{backgroundColor: this.props.color}}> 

@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import Imgwithtext from './Imgwithtext'
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
-import Form from './Form'
 
 class Colorsquare extends Component {
   constructor(props) {
@@ -22,7 +21,6 @@ class Colorsquare extends Component {
   }
 
   render(props) {
-    const { classes } = this.props
     return (
       <Fragment>
         <div className = "contactContainer">

@@ -1,5 +1,4 @@
 .colorSquare {
-    height:275px;
     width: 90%;
     max-width:325px;
     margin:20px;
@@ -33,11 +32,13 @@
     color:white;
     border: white 2px solid;
     font-weight:bold;
-
+    margin-bottom:15px;
+    transition:0.5s;
+    cursor: pointer;
 }
 
 .colorSquareBtn:hover {
-    cursor: pointer;
-    color:white;
-    border: white 3px solid;
+    border: rgb(255, 238, 141) 2px solid;
+    color:rgb(255, 246, 192) ;
+
 }

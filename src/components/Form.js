@@ -18,8 +18,6 @@ class TextFields extends React.Component {
 
 
   render(props) {  
-
-    const { classes } = this.props;
    
     //notes
     //- The inner grid is the actual review part, the outer grid helps us center it

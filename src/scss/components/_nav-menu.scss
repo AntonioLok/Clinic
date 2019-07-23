@@ -7,6 +7,7 @@
     background:#3366CC;
     text-align:center;
     color:white;
+    height:51px;
 }
 
 .navText {
@@ -24,9 +25,12 @@
 
 .navList li {
     display:inline-block;
-    padding: 18px 15px;
+    height:50px;
+    line-height:50px;
+    padding: 0px 15px;
     cursor: pointer;
     font-size:15px;
+    transition:0.5s;
 }
 
 .navList li:hover {
@@ -35,14 +39,14 @@
 }
 
 .navLogo {
-    margin-top:2px;
     float: left;
     margin-left:25px;
+    margin-top:8px;
 }
 
 .navMenu {
-    margin-top:6px;
     float: right;
     margin-right:25px;
     cursor: pointer;
+    margin-top:8px;
  }
