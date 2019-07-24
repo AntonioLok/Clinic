@@ -23,18 +23,21 @@ class Careers extends Component {
   render() {
     const applitcationForm = (
       <form onSubmit={(event) => this.handleSubmit(event)} className="application-form">
-        <TextField
-          label="First Name"
-          onChange={(event) => this.handleChange(event)}
-          className="input"
-          required
-        /> <br/>
-        <TextField
-          label="Last Name"
-          onChange={(event) => this.handleChange(event)}
-          className="input"
-          required
-        /> <br/>
+        <div className="full-name">
+          <TextField
+            label="First Name"
+            onChange={(event) => this.handleChange(event)}
+            className="input"
+            required
+          /> 
+          <TextField
+            label="Last Name"
+            onChange={(event) => this.handleChange(event)}
+            className="input"
+            required
+          />
+        </div>
+        <br/>
         <TextField
           label="Email"
           onChange={(event) => this.handleChange(event)}
@@ -43,6 +46,18 @@ class Careers extends Component {
         /> <br/>
         <TextField
           label="Phone"
+          onChange={(event) => this.handleChange(event)}
+          className="input"
+          required
+        /> <br/>
+        <TextField
+          label="Position you are applying for"
+          onChange={(event) => this.handleChange(event)}
+          className="input"
+          required
+        /> <br/>
+        <TextField
+          label="Portfolio website"
           onChange={(event) => this.handleChange(event)}
           className="input"
           required
@@ -72,10 +87,16 @@ class Careers extends Component {
           alignItems="center"
           justify="center">
         </Grid>
-          <div className="container">
+        <Grid
+          container
+          justify="center"
+          alignItems="center"
+        >
+          <div className="container" >
             <h1> Job Application Form </h1>
             {applitcationForm}
           </div>
+        </Grid>
       </div>
     );
   }
