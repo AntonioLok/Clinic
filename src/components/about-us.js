@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
+import { browserHistory } from 'react-router';
 
 class AboutUs extends Component {
+
+  reroute = (path) => {
+    browserHistory.push(path);
+  }
+
   render() {
     return (
       <div className="about-us">
@@ -63,22 +69,22 @@ class AboutUs extends Component {
               <div className="container">
                 <div className="title">Why we are the best</div>
               </div>
-              <div class="icon">
-                <i class="material-icons md-60 md-light">thumb_up</i>
+              <div className="icon">
+                <i className="material-icons md-60 md-light">thumb_up</i>
                 <div className="description-icon-text">
                   <div className="title">WELL EXPERIENCED DOCTORS</div>
                   Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean.
                 </div>
               </div>
-              <div class="icon">
-                <i class="material-icons md-60 md-light">assignment</i>
+              <div className="icon">
+                <i className="material-icons md-60 md-light">assignment</i>
                 <div className="description-icon-text">
                   <div className="title">FREE MEDICAL COUNSELING</div>
                   Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean.
                 </div>
               </div>
-              <div class="icon">
-                <i class="material-icons md-60 md-light">wifi_tethering</i>
+              <div className="icon">
+                <i className="material-icons md-60 md-light">wifi_tethering</i>
                 <div className="description-icon-text">
                   <div className="title">ONLINE BILL PAYMENT</div>
                   Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean.
@@ -96,7 +102,7 @@ class AboutUs extends Component {
             >
             <div
               className="label"
-              onClick={() => {this.props.history.push("/doctors")}}
+              onClick = {this.reroute.bind(this, "/doctors")}>
             >
               Meet our specialists
             </div>
