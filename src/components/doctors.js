@@ -1,46 +1,77 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
+import Avatar from '@material-ui/core/Avatar';
+import Card from '@material-ui/core/Card';
+import Typography from '@material-ui/core/Typography';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import IconButton from '@material-ui/core/IconButton';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import Collapse from '@material-ui/core/Collapse';
 import doctors from '../doctors-data';
 
+
 class Doctors extends Component {
+
+  componentWillMount() {
+    doctors.forEach((doctors, index) => this.setState({ [index]: false }))
+  }
 
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
       window.scrollTo(0, 0)
-      console.log("J")
     }
   }
 
+  handleExpandClick(event, index) {
+    this.setState({ [index]: !this.state[index] })
+  }
+
   render() {
-    const renderDoctor = (doctor) => {
-      const { name, picture, biography, profession } = doctor;
+
+
+    const renderDoctor = (doctor, index) => {
+      console.log(doctor);
+      const { biography, name, picture, profession } = doctor;
+      const expanded = this.state[index];
+
       return (
-        <div className="doctor">
-          <Grid
-            container
-            justify="space-even"
+      <Grid item xs={12} md={4} className="doctors" index={index}>
+        <Card>
+          <Avatar className="avatar-img" src={picture}/>
+          <div className="name">{name}</div>
+          <div className="profession">{profession}</div>
+          <IconButton
+            onClick={(e) => this.handleExpandClick(e, index)}
+            aria-expanded={expanded}
+            aria-label="show more"
           >
-            <Grid item xs={12} sm={5} lg={3} container justify="center">
-              <img src={picture} alt={name}/>
-            </Grid>
-            <Grid item xs={12} sm={7} lg={8}>
-              <div className="biography" >
-                <h2>{name}</h2>
-                <div className="profession">{profession}</div>
+          {!expanded && <div className="show-more-container">Show more<ExpandMoreIcon /></div> }
+          {expanded && <div className="show-more-container">Show Less<ExpandLessIcon /></div> }
+          </IconButton>
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <CardContent>
+              <Typography>
                 {biography}
-              </div>
-            </Grid>
-          </Grid>
-        </div>
-      );
+              </Typography>
+            </CardContent>
+          </Collapse>
+        </Card>
+      </Grid>
+    );
     }
-  
+
     return (
-      <div className="doctors">
-        <h1> Meet our doctors</h1>
+      <div className="doctors-container">
+        <h1> Meet some of our doctors</h1>
         <div className="border"> </div>
-        <h4> Our ophthalmologists, optometrists and staff are committed to delivering a professional and enjoyable patient experience. </h4>
-        {doctors.map((doctor) => renderDoctor(doctor))}
+        <p className="header-subtitle">Our ophthalmologists, optometrists and staff are committed to delivering a professional and enjoyable patient experience.</p>
+        <Grid container spacing={24} >
+          {doctors.map((doctor, index) => renderDoctor(doctor, index))}
+        </Grid>
       </div>
     );
   }

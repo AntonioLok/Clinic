@@ -1,26 +1,23 @@
-.doctors {
+.doctors-container {
   margin: 20px 100px 80px 100px;
 
-  .doctor {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    img {
-      max-width: 90%;
-      width: 260px;
-      height: 280px;
-      border: 2px solid;
-    }
+  .avatar-img {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom:30px;
+    width: 100px;
+    height: 100px;
+  }
 
-    .biography {
-      line-height: 1.6;
-      white-space: pre-line;
+  .name,
+  .profession {
+    margin-left: 24px;
+    margin-bottom: 8px;
+  }
 
-      .profession {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
-    }
+  .name {
+    font-size: 20px;
+    font-weight: 400;
   }
 
   .border {
@@ -29,6 +26,35 @@
     height: 3px;
     background: #3366CC;
     margin: 20px auto;
+  }
+
+  .doctors {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    p {
+      text-align: left;
+      margin-left: 0;
+      width: 50%;
+    }
+
+    button {
+      &:hover,
+      &:active {
+        background-color: white !important;
+      }
+    }
+    .show-more-container {
+      font-size: 16px;
+      margin-left: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    p {
+      width: 100%;
+    }
   }
 
   h1 {
@@ -46,4 +72,12 @@
     text-align: center;
     margin-bottom: 80px;
   }
+
+  p {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+
+
 }
