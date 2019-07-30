@@ -54,4 +54,14 @@
     background: #3366CC;
     margin: 20px auto;
   }
+
+  @media only screen and (max-width: 479px) {
+    h1 {
+      font-size:24px;
+    }
+    h4 {
+      font-size:16px;
+    }
+  }
+  
   

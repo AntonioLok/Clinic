@@ -8,13 +8,13 @@ import CardContent from '@material-ui/core/CardContent';
 
 const styles = theme => ({
   card: {
-    width:"80%",
+    width:"100%",
     maxWidth: 270,
     marginTop:50,
-    height:305,
+    height:330,
   },
   media: {
-    height: 200,
+    height: 225,
     width:"100%"
   },
 });
@@ -38,8 +38,8 @@ class RecipeReviewCard extends React.Component {
           title="Contemplative Reptile"
         />
         <CardContent>
-          <p> <b> Physician </b> </p>
-          <p> Dr John Doe </p>
+          <p> <b> {this.props.position} </b> </p>
+          <p> {this.props.name} </p>
         </CardContent>
     
       </Card>
