@@ -14,13 +14,8 @@ import doctors from '../doctors-data';
 class Doctors extends Component {
 
   componentWillMount() {
+    window.scrollTo(0, 0);
     doctors.forEach((doctors, index) => this.setState({ [index]: false }))
-  }
-
-  componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      window.scrollTo(0, 0)
-    }
   }
 
   handleExpandClick(event, index) {

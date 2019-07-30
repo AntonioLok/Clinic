@@ -103,7 +103,6 @@ class AboutUs extends Component {
             <div
               className="label"
               onClick = {this.reroute.bind(this, "/doctors")}>
-            >
               Meet our specialists
             </div>
             </Grid>
