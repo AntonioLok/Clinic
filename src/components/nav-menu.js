@@ -110,7 +110,7 @@ class NavMenu extends Component {
        <div className="nav-menu-1">
        <Grid container spacing={0} align = "center">
           <Grid item xs={6} sm = {4} md = {4} lg = {6}>
-              <img alt ="" className = "navLogo" src = "../img/logo.png"/>
+              <img onClick = {this.reroute.bind(this,"/")} alt ="logo" className = "navLogo" src = "../img/logo.png"/>
           </Grid>
           <Grid item xs={6} sm = {8} md = {8} lg = {6}>
               <Hidden smDown>
