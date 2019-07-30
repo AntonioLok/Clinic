@@ -23,8 +23,6 @@ class Doctors extends Component {
   }
 
   render() {
-
-
     const renderDoctor = (doctor, index) => {
       console.log(doctor);
       const { biography, name, picture, profession } = doctor;

@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid'
+import Grid from '@material-ui/core/Grid';
 
 class Careers extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: ""
+      name: "",
+      resumeFileName: "",
+      cvFileName: ""
     }
   }
 
@@ -18,6 +20,21 @@ class Careers extends Component {
 
   handleChange(e) {
     this.setState({name: e.target.value});
+  }
+
+  handleFileChange(event, type) {
+    console.log(type)
+    if (!event.target.files[0]) {
+      return
+    }
+    if (type === "cv")
+    {
+      console.log("cv")
+      this.setState({ cvFileName: event.target.files[0].name })
+    } else {
+      console.log("else ")
+      this.setState({ resumeFileName: event.target.files[0].name })
+    }
   }
 
   render() {
@@ -38,7 +55,7 @@ class Careers extends Component {
           />
         </div>
         <br/>
-        <TextField
+        <TextField  
           label="Email"
           onChange={(event) => this.handleChange(event)}
           className="input"
@@ -62,13 +79,15 @@ class Careers extends Component {
           className="input"
           required
         /> <br/>
-        <div className="file-upload">
-          <div className="file-label">Resume:</div> 
-          <input type="file" required/>
+        <div className="file-container">
+          <input type="file" id="resume" onChange={(event) => this.handleFileChange(event, 'resume')} />
+          <label for="resume">Upload Your resume</label>
+          <span><p>{this.state.resumeFileName}</p></span>
         </div>
-        <div className="file-upload">
-          <div className="file-label">Cover Letter:</div> 
-          <input type="file" required/>
+        <div className="file-container">
+          <input type="file" id="cv" onChange={(event) => this.handleFileChange(event, 'cv')} />
+          <label for="cv">Upload Your CV</label>
+          <span><p>{this.state.cvFileName}</p></span>
         </div>
         <TextField
           label="Additional comments (optional)"
@@ -93,7 +112,9 @@ class Careers extends Component {
           alignItems="center"
         >
           <div className="container" >
-            <h1> Job Application Form </h1>
+            <h1>Job Application Form</h1>
+            <div className="border"> </div>
+            <h4>A career with us means a place where your ideas are heard and valued.</h4>
             {applitcationForm}
           </div>
         </Grid>
