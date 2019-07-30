@@ -7,13 +7,23 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/Inbox';
+import HomeIcon from '@material-ui/icons/Home';
+import InfoIcon from '@material-ui/icons/Info';
 import PropTypes from 'prop-types';
 import { browserHistory } from 'react-router';
+import DoctorIcon from '@material-ui/icons/AccountBox';
+import ContactIcon from '@material-ui/icons/ContactSupport';
+import CareerIcon from '@material-ui/icons/Work'
+import { withStyles } from '@material-ui/core/styles';
+
 
 const styles = {
+
   root: {
       width: '100%',
       maxWidth: 360,
+      height: '100vh',   
+      background:'#3366CC',
   },
   list: {
     width: 250,
@@ -21,6 +31,12 @@ const styles = {
   fullList: {
     width: 'auto',
   },
+  listItemText: {
+    color: 'white',
+  },
+  icon: {
+    color: "white",
+  }
 };
 
 
@@ -42,46 +58,47 @@ class NavMenu extends Component {
 
   render(props) {
 
+    const { classes } = this.props;
 
     //Mobile menu
     const sideList = (
       <div style={styles.root}>
       <List component="nav">
-        <ListItem button>
+        <ListItem button onClick = {this.reroute.bind(this, "/")}>
           <ListItemIcon>
-            <InboxIcon />
+          <HomeIcon className = {classes.icon} />
           </ListItemIcon>
-          <ListItemText primary="Home" />
+          <ListItemText classes={{ primary: classes.listItemText }} primary="Home" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick = {this.reroute.bind(this, "/about-us")}>
           <ListItemIcon>
-            <InboxIcon />
+            <InfoIcon className = {classes.icon} />
           </ListItemIcon>
-          <ListItemText primary="About Us" />
+          <ListItemText classes={{ primary: classes.listItemText }}  primary="About Us" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick = {this.reroute.bind(this, "/doctors")}>
           <ListItemIcon>
-            <InboxIcon />
+            <DoctorIcon className = {classes.icon} />
           </ListItemIcon>
-          <ListItemText primary="Doctors" />
+          <ListItemText classes={{ primary: classes.listItemText }}  primary="Doctors" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick = {this.reroute.bind(this, "/departments")}>
           <ListItemIcon>
-            <InboxIcon />
+            <InboxIcon className = {classes.icon} />
           </ListItemIcon>
-          <ListItemText primary="Departments" />
+          <ListItemText classes={{ primary: classes.listItemText }}  primary="Departments" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick = {this.reroute.bind(this, "/careers")}>
           <ListItemIcon>
-            <InboxIcon />
+            <CareerIcon className = {classes.icon} />
           </ListItemIcon>
-          <ListItemText primary="Careers" />
+          <ListItemText classes={{ primary: classes.listItemText }}  primary="Careers" />
         </ListItem>
-        <ListItem button>
+        <ListItem button onClick = {this.reroute.bind(this, "/contact-us")}>
           <ListItemIcon>
-            <InboxIcon />
+            <ContactIcon className = {classes.icon} />
           </ListItemIcon>
-          <ListItemText primary="Contact Us" />
+          <ListItemText classes={{ primary: classes.listItemText }}  primary="Contact Us" />
         </ListItem>
         
       </List>
@@ -132,4 +149,4 @@ NavMenu.propTypes = {
 };
 
 
-export default NavMenu;
+export default withStyles(styles)(NavMenu);

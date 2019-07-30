@@ -35,12 +35,14 @@ class Colorsquare extends Component {
                 label="Name"
                 onChange={(event) => this.handleChange(event)}
                 className="input"
+                variant="outlined"
                 required
               /> 
               <TextField
                 label="Your Email Address"
                 onChange={(event) => this.handleChange(event)}
                 className="input"
+                variant="outlined"
                 required
               /> 
               <TextField
@@ -49,6 +51,7 @@ class Colorsquare extends Component {
                 multiline={true}
                 rows={5}
                 className="input"
+                variant="outlined"
                 required
               /> 
               <button className = "button"> Submit </button>
