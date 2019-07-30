@@ -58,7 +58,7 @@ class Doctors extends Component {
       <div className="doctors-container">
         <h1> Meet some of our doctors</h1>
         <div className="border"> </div>
-        <p className="header-subtitle">Our ophthalmologists, optometrists and staff are committed to delivering a professional and enjoyable patient experience.</p>
+        <h4 className="header-subtitle">Our ophthalmologists, optometrists and staff are committed to delivering a professional and enjoyable patient experience.</h4>
         <Grid container spacing={24} >
           {doctors.map((doctor, index) => renderDoctor(doctor, index))}
         </Grid>

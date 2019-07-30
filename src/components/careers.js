@@ -25,14 +25,12 @@ class Careers extends Component {
   handleFileChange(event, type) {
     console.log(type)
     if (!event.target.files[0]) {
-      return
+      return;
     }
     if (type === "cv")
     {
-      console.log("cv")
       this.setState({ cvFileName: event.target.files[0].name })
     } else {
-      console.log("else ")
       this.setState({ resumeFileName: event.target.files[0].name })
     }
   }
