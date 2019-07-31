@@ -10,12 +10,9 @@ class Footer extends Component {
       <div className="footer">
         <Grid
           container
-          direction="row"
-          justify="space-evenly"
-          spacing={12}
           className="footer-grid"
         >
-          <Grid item xs={7} sm={3} md={2}>
+          <Grid item xs={7} sm={3} md={4}>
             <div className="footer-columns"> 
               <div className="footer-header"> 
                 Contact Details
@@ -45,7 +42,7 @@ class Footer extends Component {
             </div>
             <div className="border"> </div>
           </Grid>
-          <Grid item xs={7} sm={3} md={2}>
+          <Grid item xs={7} sm={3} md={4}>
           <div className="footer-columns"> 
             <div className="footer-header"> 
                 Quick Links
@@ -63,7 +60,7 @@ class Footer extends Component {
             </div>
             <div className="border"> </div>
           </Grid>
-          <Grid item xs={7} sm={3} md={2}>
+          <Grid item xs={7} sm={3} md={4}>
           <div className="footer-columns"> 
             <div className="footer-header"> 
                 Opening Hours

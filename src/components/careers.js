@@ -99,7 +99,7 @@ class Careers extends Component {
 
     return (
       <div className="job-application">
-        <Grid item xs={12} className="page-banner"
+        <Grid item xs={12} sm={12} md={12} className="page-banner"
           container
           alignItems="center"
           justify="center">
