@@ -12,7 +12,7 @@ class Footer extends Component {
           container
           className="footer-grid"
         >
-          <Grid item xs={7} sm={3} md={4}>
+          <Grid item xs={12} sm={4} md={4}>
             <div className="footer-columns"> 
               <div className="footer-header"> 
                 Contact Details
@@ -42,7 +42,7 @@ class Footer extends Component {
             </div>
             <div className="border"> </div>
           </Grid>
-          <Grid item xs={7} sm={3} md={4}>
+          <Grid item xs={12} sm={4} md={4}>
           <div className="footer-columns"> 
             <div className="footer-header"> 
                 Quick Links
@@ -60,7 +60,7 @@ class Footer extends Component {
             </div>
             <div className="border"> </div>
           </Grid>
-          <Grid item xs={7} sm={3} md={4}>
+          <Grid item xs={12} sm={4} md={4}>
           <div className="footer-columns"> 
             <div className="footer-header"> 
                 Opening Hours
