@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import Imgwithtext from './Imgwithtext'
 
 class Careers extends Component {
   constructor(props) {
@@ -99,11 +100,7 @@ class Careers extends Component {
 
     return (
       <div className="job-application">
-        <Grid item xs={12} sm={12} md={12} className="page-banner"
-          container
-          alignItems="center"
-          justify="center">
-        </Grid>
+        <Imgwithtext src = "http://www.christiancountyhd.com/file/image/m/1920/619/6470214c-20e0-405c-a63b-6008443c953b" text = ""/>
         <Grid
           container
           justify="center"
