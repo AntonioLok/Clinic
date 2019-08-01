@@ -12,9 +12,11 @@
 @import './components/contact.scss';
 @import './components/imgwithtext.scss';
 @import './components/form.scss';
+@import './components/department.scss';
 
 body {
   margin: 0;
+  font-family: "Palatino", "Lucida Grande", sans-serif
 }
 
 /* Rules for sizing the icon. */

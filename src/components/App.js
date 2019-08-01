@@ -8,6 +8,7 @@ import Footer from './footer';
 import AboutUs from './about-us';
 import Contact from './Contact';
 import '../scss/app.scss';
+import Department from './Department';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
             <Route exact path="/about-us" component={AboutUs} />
             <Route exact path="/careers" component={Careers} />
             <Route exact path="/contact-us" component={Contact} />
+            <Route exact path="/departments" component={Department} />
           </Router>
           <Footer />
         </div>
