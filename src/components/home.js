@@ -34,11 +34,11 @@ class Home extends Component {
 
         <Grid container spacing={0} align = "center" className = "middleGrid">
         <Grid item xs={12} sm = {6} md = {8}>
-            <Testimonial text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." name="- John Doe (Patient)" img="../img/profile1.jpg" />
+            <Testimonial text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." name="- Christopher Greene (Patient)" img="../img/profile1.jpg" />
             <hr/>
-            <Testimonial text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." name="- John Doe (Patient)" img="../img/profile.jpg"/>
+            <Testimonial text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud." name="- Linda Smith (Patient)" img="../img/profile.jpg"/>
             <hr/>
-            <Testimonial text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." name="- John Doe (Patient)" img="../img/profile1.jpg"/>
+            <Testimonial text = "Et iusto odio dignissimos quas molestias ducimus qui blanditiis ut enim ad minim  praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident." name="- Shannon Forrest (Patient)" img="../img/profile2.jpg"/>
         </Grid>
         <Grid item xs={12} sm = {6} md = {4}>
             <Hours/>
@@ -55,16 +55,16 @@ class Home extends Component {
                 <Card position = "Physician" name = "Emily Baker"  src = "../img/doctor2.jpg"/>
             </Grid>
             <Grid item xs={12} sm = {6} md = {4}>
-               <Card position = "Dermatologist" name = "Robert Clark" src = "../img/doctor3.jpg"/>
+               <Card position = "Dermatologist" name = "Robert Clark" src = "../img/doctor4.jpg"/>
             </Grid>
             <Grid item xs={12} sm = {6} md = {4}>
-                <Card position = "Neurologist" name = "Kylie Smith"  src = "../img/doctor3.jpg"/>
+                <Card position = "Neurologist" name = "Kylie Smith"  src = "../img/doctor6.jpg"/>
             </Grid>
             <Grid item xs={12} sm = {6} md = {4}>
-                <Card position = "Surgeon" name = "James Davis"  src = "../img/doctor1.jpg"/>
+                <Card position = "Surgeon" name = "James Davis"  src = "../img/doctor3.jpg"/>
             </Grid>
             <Grid item xs={12} sm = {6} md = {4}>
-               <Card position = "Anesthesiologist" name = "Sarah Jones"  src = "../img/doctor2.jpg"/>
+               <Card position = "Anesthesiologist" name = "Sarah Jones"  src = "../img/doctor5.jpg"/>
             </Grid>
         </Grid>
       </Fragment>
