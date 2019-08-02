@@ -1,103 +1,90 @@
 .about-us {
-  .page-banner {
-    text-align: center;
-    height: 340px;
-    font-size: 36px;
-    color: white;
-    background : url('https://urbancsc.org/imgs/job_application_banner.jpg'); 
-    box-shadow: inset 0 0 0 2000px rgba(3, 27, 240, 0.3);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
+  color: #182130;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.375;
 
-  .container {
-    margin-left: 100px;
-    margin-right: 100px;
-    .border {
-      display: block;
-      width: 80px;
-      height: 3px;
-      background: #3366CC;
-      margin: 20px auto;
-    }
-  }
-
-  .why-best-section {
-    color: white;
-    .intro {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-    .intro-left {
-      margin-left: 40px;
-      margin-right: 40px;
-      color: black;
-      img {
-        width: 100%;
-        height: 360px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-    }
-
-    .intro-right {
-      margin-left: 40px;
-      margin-right: 40px;
-      color: black;
-      line-height: 1.6;
-      white-space: pre-line;
-    }
-
-    .description {
-      background-color: #3366CC;
-
-      .container {
-        margin-top: 20px;
-        text-align: center;
-        .title {
-          font-size: 28px;
-        }
-      }
-      .icon {
-        display: flex;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        align-items: center;
-        justify-content: center;
-        .description-icon-text {
-          margin-left: 20px;
-          .title {
-            font-size: 26px;
-          }
-        }
-      }
-    }
-
-    .img {
-      width: 100%;
-      height: 464px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-image: url('http://theembazaar.com/demo/themesfolios/medical-care/assets/images/what-we-do-best.jpg');
-    }
-  }
-
-  .meet-our-specialist {
-    font-size: 80px;
+  .banner-container {
     width: 100%;
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: url('http://drcollaborative.com/wp-content/uploads/2016/08/doctors-resource-collaborative-albuquerque-1600x530.jpg');
-    cursor: pointer;
+    height: 400px;
+    .top-banner {
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-image: url(https://www.petalmd.com/hubfs/_PetalMD_Sept2018/Banners/about-header.png);
+      .text-container {
+        padding: 0 60px;
+        text-align: left;
+        h1 {
+          font-size: 43px;
+          font-weight: 700;
+          color: #224B96;
+          text-align: left;
+          line-height: 1.2;
+          margin: 0 0 20px;
+        }
+        p {
+          font-size: 20px;
+          width: 90%
+        }
 
-    .label {
+        @media screen and (min-width: 900px) {  /* -- If the view port is less than 350px wide (portrait on phone) then display the following styles -- */
+          p {
+            width: 55%;
+          }
+       }
+      }
+    }
+  }
+  .custom-widget {
+    margin: 95px auto;
+
+    .left-text {
+      
+      padding: 0 60px;
+      h2 {
+        font-size: 43px;
+        font-weight: 700;
+        color: #224B96;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+    img {
+      margin: 0 60px 20px;
+      height: 80%;
+      width: 80%;
+    }
+
+  }
+
+  .awards-recognition {
+    background: #F7F9FD;
+    padding: 40px;
+    .title {
       text-align: center;
+      font-weight: 400;
+      font-family: 'Gotham A', 'Gotham B';
+      font-size: 43px;
+      color: #224B96;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .single-award-container {
+      width: 100%;
+      margin: 25px auto;
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 55%;
+      }
+      .award-description {
+        width: 35%;
+      }
     }
   }
 }
