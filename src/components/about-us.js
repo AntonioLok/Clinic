@@ -96,7 +96,7 @@ class AboutUs extends Component {
         <Grid
           container
           direction="row"
-          justify="space-evenly"
+          justify="center"
           spacing={12}
           className="awards-recognition"
         >
