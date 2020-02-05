@@ -1,67 +1,69 @@
-.colorSquareGrid {
-    margin-top: 40px;
+.homeContainer {
+    margin-bottom:50vw;
+    text-align:center;
 }
 
-.middleGrid {
-    margin-top: 40px;
-    margin-bottom: 80px;
+.card {
+    width:15%;
+    max-width: 120px;
+    margin:20px;
+    animation: deal 0.5s;
 }
 
-.doctorGrid {
-    margin-bottom:50px;
+.dealerContainer {
+    position: absolute;
+    width:100%;
+    top:0px;
+
 }
 
-.prevDoctor, .nextDoctor {
-    text-align: center;
-    color:black;
-    cursor: pointer;
-    width:20px;
-    height:60px;
-    margin-top: 200px;
-    padding: 16px;
-    font-weight: bolder;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+.handContainer {
+    position: absolute;
+    width:100%;
+    bottom:0px;
+
 }
 
-.prevDoctor:hover, .nextDoctor:hover {
-    background-color:grey;
+.handContainer button{
+    border:none;
+    margin:auto;
+    margin-top:20px;;
+    display:block;
+    height:30px;
+    width:120px;
     color:white;
-  }
+    font-size:14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+    outline:none;
+}
 
-  h1 {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+.handContainer button:hover {
+    background:green;
+}
 
-  h4 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
+.total {
+    color:white;
+    font-weight: bold;
+    font-size:22px;
+}
 
-  h5 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size:16px;
-  }
+.hide {
+    display:none;
+}
 
-  .border-home {
-    display: block;
-    width: 80px;
-    height: 3px;
-    background: #3366CC;
-    margin: 20px auto;
-  }
-
-  @media only screen and (max-width: 479px) {
-    h1 {
-      font-size:24px;
-    }
-    h4 {
-      font-size:16px;
-    }
+.disabled {
+    background:orange;
+}
+@-webkit-keyframes deal {
+    from { opacity:0.5;    transform: translatey(-400px);}
+    to {opacity: 1;    transform: translatey(0px);}
   }
   
-  
+
+@keyframes deal {
+    from { opacity:0.5;    transform: translatey(-400px);}
+    to {opacity: 1;    transform: translatey(0px);}
+}
